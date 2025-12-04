@@ -1,0 +1,51 @@
+{
+  "position": "top",
+  "layer": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "memory", "network", "custom/bluetooth", "pulseaudio", "tray"],
+
+  "clock": {
+    "format": "{:%A %d %B  |  %H:%M}"
+  },
+
+  "cpu": {
+    "format": "CPU: {usage}%",
+    "tooltip": true 
+  },
+
+  "memory": {
+    "format": "RAM: {}%",
+    "tooltip": true 
+  },
+
+  "network": {
+    "format-wifi": "WiFi: {essid}",
+    "format-ethernet": "Eth: {ipaddr}",
+    "format-disconnected": "No Network",
+    "tooltip": true
+  },
+
+  "custom/bluetooth": {
+    "exec": "bluetoothctl info | grep Name | cut -d ' ' -f2- || echo 'No Bluetooth'",
+    "interval": 5,
+    "format": "BT: {}",
+    "tooltip": true 
+  },
+
+  "pulseaudio": {
+    "format": "{volume}%",
+    "format-muted": "muted",
+    "on-click": "pavucontrol",
+    "tooltip": true
+  },
+
+  "tray": {
+    "spacing": 15,
+    "tooltip": true,
+    "cursor": true
+  },
+  "hyprland/workspaces": {
+    "cursor": true
+  }
+}

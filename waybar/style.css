@@ -1,0 +1,31 @@
+* {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 11px;
+  border: none;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 6px 10px;
+}
+
+#clock,
+#cpu,
+#memory,
+#network,
+#custom-bluetooth,
+#pulseaudio,
+#tray {
+  padding: 4px 10px;
+  margin: 0 4px;
+  border-radius: 6px;
+}
+
+#workspaces button {
+  padding: 2px 8px;
+  margin: 2px;
+  color: white;
+  background: transparent;
+  box-shadow: none;
+}
