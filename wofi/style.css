@@ -1,0 +1,36 @@
+window {
+    background : rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto Mono';
+    border: 1px solid white;
+    color: white;
+}
+
+#entry {
+  color: white;
+  padding : 10px;
+}
+
+#text{
+  color : white;
+}
+
+#entry:selected {
+   background-color: transparent;
+   border : 1px solid white;
+}
+
+
+
+#input {
+  color: white;
+  background : transparent;
+  border-radius : 0;
+  border: 1px solid white; /* or any color you want */
+}
+#input:focus {
+    outline: none;
+    border-radius : 0;
+    border: 1px solid white; /* or any color you want */
+    box-shadow: none;       /* removes any browser-specific glow */
+}
+

@@ -1,0 +1,40 @@
+[wofi]
+# Launch mode: can be 'drun', 'window', 'run'
+mode=drun
+
+# Number of lines to display in the menu
+lines=10
+
+# Text displayed in the prompt
+prompt=Run:
+
+# Case sensitivity: 'smart' makes it case-insensitive unless uppercase letters are used
+case-sensitive=smart
+
+# Sorting of the entries: 'none', 'alphabetical', 'frecency'
+sort=alphabetical
+
+# How to handle entry selection: 'run', 'print', 'none'
+on-select=run
+
+# Enable fuzzy matching
+fuzzy-match=true
+
+# Ignore case when matching (helps with fuzzy)
+ignore-case=true
+
+# Show hidden entries in drun mode (e.g., .desktop files starting with .)
+show-hidden=false
+
+# Keyboard shortcuts within Wofi
+keybindings:
+    escape=exit         # Esc exits
+    ctrl+u=clear_input  # Ctrl+U clears the input
+    ctrl+backspace=delete_word
+    ctrl+j=move_down
+    ctrl+k=move_up
+    ctrl+n=move_down
+    ctrl+p=move_up
+
+width=400
+hide-categories=false
